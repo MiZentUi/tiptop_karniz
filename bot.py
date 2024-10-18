@@ -15,7 +15,7 @@ dispatcher = aiogram.Dispatcher(storage=aiogram.fsm.storage.memory.MemoryStorage
 
 @dispatcher.message(aiogram.filters.Command("start"))
 async def start_message(message: aiogram.types.Message):
-    await message.answer("Добро пожаловать в магазин TipTop Karniz!", reply_markup=aiogram.types.InlineKeyboardMarkup(inline_keyboard=[[aiogram.types.InlineKeyboardButton(text="Menu", web_app=aiogram.types.WebAppInfo(url="https://mizentui.github.io/naimix"))]]))
+    await message.answer("Добро пожаловать в магазин TipTop Karniz!", reply_markup=aiogram.types.InlineKeyboardMarkup(inline_keyboard=[[aiogram.types.InlineKeyboardButton(text="Menu", web_app=aiogram.types.WebAppInfo(url="https://mizentui.github.io/tiptop_karniz/"))]]))
 
 @dispatcher.message()
 async def get_data(message):
